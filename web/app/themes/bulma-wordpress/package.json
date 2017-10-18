@@ -1,0 +1,22 @@
+{
+  "name": "wp-bulma-wordpress",
+  "version": "0.0.1",
+  "description": "A WordPress theme",
+  "main": "index.php",
+  "scripts": {
+    "test": "npm --version",
+    "start": "npm run sass:watch",
+    "sass:watch": "node-sass --source-map true ./src/styles.scss ./style.css -w"
+  },
+  "keywords": [
+    "wordpress"
+  ],
+  "author": "E. 'epatr.com' Patrick",
+  "license": "ISC",
+  "devDependencies": {
+    "bulma": "^0.5.0",
+    "font-awesome": "^4.7.0",
+    "gulp-sass": "^3.1.0",
+    "node-sass": "^4.5.3"
+  }
+}

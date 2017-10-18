@@ -1,0 +1,12 @@
+
+@import "../../node_modules/bulma/sass/utilities/initial-variables";
+
+
+//$family-serif: 'Merriweather', 'Georgia', serif;
+//$family-primary: $family-serif;
+$family-headers: 'Oswald', $family-sans-serif;
+
+$primary: $blue;
+
+// I did this because of how unwieldy their responsive menu is
+// $tablet: 960px + (2 * $gap);

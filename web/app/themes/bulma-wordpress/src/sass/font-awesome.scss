@@ -1,0 +1,10 @@
+// Add FontAwesome
+$fa-font-path: "assets/fonts";
+@import "../../node_modules/font-awesome/scss/font-awesome";
+
+// Extend FontAwesome icons 
+// https://stackoverflow.com/questions/21406538/how-to-use-font-awesome-icons-from-node-modules
+.icon-home {
+    @extends .fa;
+    @extends .fa-home;
+}

@@ -1,0 +1,140 @@
+/*
+Theme Name: Bulma+Wordpress
+Theme URI: http://ukyrgf.com
+Description: A lightweight theme for displaying flyers
+Author: Eric 'https' Patrick
+Author URI: https://epatr.com
+*/
+
+// ^ Need that to be first for Wordpress
+
+@import "sass/override-variables";
+
+// Add the rest of Bulma
+@import "../node_modules/bulma/bulma";
+
+@import "sass/font-awesome";
+
+body {
+    font-display: swap;
+}
+
+p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-word;
+    word-break: break all;
+}
+
+.article {
+    margin-bottom: 2em;
+}
+
+body > .header h2 {
+    font-weight: 400;
+    font-family: $family-headers;
+    text-transform: uppercase;
+}
+
+h3.header__motto {
+    margin-bottom: 0;
+}
+
+
+article {
+
+    .article__metadata {
+        margin-bottom: .5em;
+        text-transform: uppercase;
+        color: $grey;
+        font-size: $size-7;
+        
+        ul.post-categories {
+            display: inline;
+            list-style-type: none;
+            margin: 0;
+            li {
+                display: inline;
+            }
+        }
+    }
+    .image {
+        margin-bottom: 2em;
+        max-height: 630px;
+        overflow: hidden;
+    }
+    .article__content {
+        padding-bottom: 3rem;
+    }
+
+}
+
+.article > h2 {
+    margin-bottom: .25em !important;
+}
+
+.map-embed {
+    height: 20em;
+    overflow: hidden;
+}
+
+.menu-list li {
+    list-style-type: none;
+}
+
+ul.menu-wp_nav_menu {
+    @extend .menu-list;
+}
+.menu ul {
+    margin-left: 0;
+}
+
+aside.menu {
+    margin-bottom: 3em;
+}
+
+.current-menu-item > a {
+    @extend .is-active;
+    // background-color: #3273dc;
+    // color: #fff;
+}
+
+.navbar {
+    @extend .hero.is-light.is-bold;
+
+    // End of the navbar
+    &-end {
+        // Get the search box to valign middle
+        align-items: center;
+        .field {
+            // Add padding to the sides of the search box input
+            padding: 0 1em;
+            justify-content: center;
+        }
+    }
+}
+
+.navbar-brand, .navbar-menu {
+    .navbar-title {
+        font-weight: 700;
+    }
+    font-family: $family-headers;
+    text-transform: uppercase;
+}
+
+.summary .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    div {
+        flex: 1;
+    }
+    figure {
+        margin: 0;
+    }
+}
+
+.footer {
+    padding-bottom: 3rem;
+}
