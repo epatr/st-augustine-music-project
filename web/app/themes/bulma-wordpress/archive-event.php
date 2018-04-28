@@ -47,4 +47,8 @@ if ($the_query->have_posts()) : ?>
 
 endif;
 
+?>
+
+<div class="has-text-centered"><a href="/event-history/">View Older Events</a></div>
+
 get_footer();

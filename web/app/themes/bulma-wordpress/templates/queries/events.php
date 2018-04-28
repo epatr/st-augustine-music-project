@@ -1,7 +1,7 @@
 <?php
 
 // YYYYMMDD format, to compare with the event_date field
-$todaysDate = date('Ymd');
+$todaysDate = date('Ymd', strtotime("-6 months"));
 
 // This file should have been called in a function with $variables as an integer
 return array(
