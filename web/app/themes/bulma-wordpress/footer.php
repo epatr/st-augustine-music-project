@@ -12,6 +12,7 @@
 
             <div>
                 <span class="icon"><a href="https://github.com/epatr/st-augustine-music-project"><i class="fa fa-github"></i></a></span>
+                <span class="icon"><a href="mailto:stamusic.org@gmail.com"><i class="fa fa-envelope-o"></i></a></span>
             </div>
             
         </div> <!-- /.content.has-text-centered -->
